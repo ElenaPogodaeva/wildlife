@@ -326,6 +326,7 @@ a:focus {
 	padding-left: 90px;
 	padding-right: 90px;
 	position:relative;
+	margin-bottom: 239px;
 }
 
 .slider__control {
@@ -345,6 +346,10 @@ a:focus {
 	justify-content: center;
 	align-items: center;
 }
+
+.slider__button:hover path {
+	fill: #cc8b86;
+}
 .slider__button_prev svg{
 	transform: rotate(180deg);
 }
@@ -357,7 +362,13 @@ a:focus {
 	flex: 0 1 33.333%;
 	padding:0px 30px;
 	position: relative;
+	overflow: hidden;
 }
+
+.slider__item:hover img{
+		transform:scale(1.05);
+}
+
 
 .slider__img {
 	overflow: hidden;
@@ -374,8 +385,6 @@ a:focus {
 	top:0;
 	left:0;
 }
-
-
 
 .slider__text {
 	position:absolute;
@@ -399,4 +408,51 @@ a:focus {
 	font-size: 17px;
 	line-height: 27px;
 	color: #F7F7F7;
+}
+
+.slider__link {
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	z-index:4;
+}
+
+/* Стили для  блока form*/
+.form {
+	max-width: 660px;
+	margin:0 auto;
+}
+
+.form__title {
+	font-size: 27px;
+	line-height: 40px;
+	color:#333333;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.form__action {
+	display:flex;
+	align-items: center;
+}
+
+.form__input {
+	height: 60px;
+	width: 100%;
+	padding:0px 15px;
+	border:1px solid #666666;
+	border-right: none;
+	background-color: transparent;
+	font-size: 23px;
+	line-height: 27px;
+	font-family: 'Roboto', sans-serif;
+	color:#666666;
+}
+
+.form__button {
+	flex: 0 0 120px;
+	border: 1px solid #CD6326;
+	border-radius: 0px 5px 5px 0px;
 }
