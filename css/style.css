@@ -223,8 +223,8 @@ a:focus {
 		
 }
 .logo img {
-		width: 70px;
-		height: 60px;
+	width: 70px;
+	height: 60px;
 }
 	
 .logo__text {
@@ -455,4 +455,80 @@ a:focus {
 	flex: 0 0 120px;
 	border: 1px solid #CD6326;
 	border-radius: 0px 5px 5px 0px;
+}
+
+/* Стили для footer*/
+
+.footer {
+	background-color: #181617;
+	background: url("../img/footer/footer-bg.jpg") center no-repeat;
+	background-size: cover;
+	padding: 150px 0px;
+}
+
+.footer__container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer__list li {
+	margin:0px 43px;
+}
+
+.footer__list li:last-child {
+	margin-right: 0;
+}
+
+.footer__link {
+	font-size: 23px;
+	line-height: 60px;
+	color: #F7F7F7;
+	transition: color 0.3s ease 0s;
+}
+
+.footer__link:hover {
+	color: #CD6326;
+}
+
+.social__list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.social__list li {
+	margin:0px 13px;	
+}
+
+.social__list li:last-child {
+	margin-right: 0;
+}
+
+.social__link {
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+
+.social__link_1 {
+	background: url("../img/footer/1.svg") center no-repeat;
+}
+
+.social__link_2 {
+	background: url("../img/footer/2.svg") center no-repeat;
+}
+
+.social__link_3 {
+	background: url("../img/footer/3.svg") center no-repeat;
+}
+
+.social__link_4 {
+	background: url("../img/footer/4.svg") center no-repeat;
 }
